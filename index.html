@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <title>Polygon Drawer</title>
+    <script src="./js/f_draw_polygon.js"></script>
+    <script src="./js/c_draw_polygon.js"></script>
+    <script src="./js/v_draw_polygon.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>  
+<body>  
+    <div id="div1" style="width: auto; height: auto;">
+        <h1 id="title" style="font-family: Arial, sans-serif; font-size: 28px;">Polygon Drawer</h1>  
+    </div>
+    <div id="div2_map" style="width:1900px; height:1600px; background:grey; float: left;"></div>  
+    <div id="div3" style="width:500px; height: 100%; float: left; padding:10px;">
+        <div id="div3_1" style="width: 100%;">
+            <div id="div3_1_1" style="height: 35px; width:70pt; float:left; font-family: Arial, sans-serif; font-size: 20px; font-weight: bold;">Polygons</div>
+            <div id="div3_1_2" style="padding-left: 10px; float:left; ">
+                <div id="button_plus" class="button_plus" onclick="f_addPolygonBox1()"></div>
+            </div>
+        </div>
+        <div id="div3_2" style="clear:left;">
+            <div class="div3_2_xml_box" ondrop="f_dropHandler(event);" ondragover="f_dragOverHandler(event);" ondragleave="f_dragLeaveHandler(event);">
+                <p class="drop_box_p">Add polygons by drag and drop a xml file</p>
+            </div>
+            <div class="div3_2_download_btn" style="width: 60%; height: 20px; margin-top: 10px;">
+                <button id="download_polygon_xml" style="margin-top:15px;" type="button" onclick="f_downloadPolygonXml()">Download Polygon Data</button>
+            </div>
+        </div>
+    </div>
+    <div id="div4" style="width:100%; clear:left;"></div>
+    <div id="div5" style="width:100%; clear:left;">
+        <div id="div5_1" style="float: left; width: 50%;">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 11px; float: none;">Version: 1.0 </br> Developed by SG solution </p>
+        </div>
+        <div id="div5_2" style="float: left; width: 50%;">
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 11px;">Released in Dec. 1st 2022</br>All rights reserved.</p>
+        </div>
+    </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=<type your google maps api key>&callback=f_initMap&v=3" defer></script>  
+</body>  
+</html>  
