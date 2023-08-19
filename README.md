@@ -1,6 +1,11 @@
 # Draw_polygons_on_map
 This tool can help you drawing polygons on map.
 
+## Version list
+| No. | version | author | date | status |
+| --- | --- | --- | --- | --- |
+| 1 | v1.0.0 | Sang-gyu Park | 2023/Aug/19 | update README.md |
+
 ## Features
 1. Draw polygons on map
 2. Show polygon coordinates.
